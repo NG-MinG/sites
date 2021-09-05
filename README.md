@@ -5,6 +5,6 @@ Practices: https://m2kv.github.io/sites/
 
 Khoa: https://m2kv.github.io/sites/KhoaNguyen/
 
-Khang: updating...
+Khang: https://m2kv.github.io/sites/KhangDinh/
 
 Vinh: updating...
