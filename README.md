@@ -3,7 +3,7 @@ Relationships
 
 Practices: https://m2kv.github.io/sites/
 
-Khoa: https://m2kv.github.io/sites/Khoa%20Nguyen/
+Khoa: https://m2kv.github.io/sites/KhoaNguyen/
 
 Khang: updating...
 
