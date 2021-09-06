@@ -114,6 +114,7 @@ main .content a
     font-size: .65rem;
     border-radius: .13rem;
     max-width: 5rem;
+    width: 5rem;
 }
 main .content img
 {
