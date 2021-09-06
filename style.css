@@ -1,43 +1,129 @@
 *{box-sizing: border-box; margin: 0px; padding: 0px;} html, body {background-color: #E6E6E6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: black; font-size: 16px; font-weight: 550; margin: 0px; overflow-x: hidden; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -moz-font-smoothing: antialiased; text-rendering: optimizeSpeed; -webkit-tap-highlight-color: rgba(0,0,0,0); -ms-tap-highlight-color: rgba(0,0,0,0); -moz-tap-highlight-color: rgba(0,0,0,0); } a {color: black; text-decoration: none; outline: none; } input, textarea, input[type="text"], input[type="password"], input[type="number"], input[type="search"], button[type="submit"], input[type="submit"] {-webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none; border-radius: 0; outline: none; } button, button[type="submit"], input[type="submit"], button[type="button"] {cursor: pointer; outline: none; } .ntrns {-webkit-transition: none !important; -moz-transition: none !important; -ms-transition: none !important; transition: none !important; } .hidden {height: 0px !important; padding: 0px !important; } .fleft {float: left !important; } .fright {float: right !important; } .op0 {opacity: 0 !important; } ::-webkit-scrollbar{width: .4rem;} ::-webkit-scrollbar:hover{width: .4rem;} ::-webkit-scrollbar-track{background-color: white; border-radius: 0px;} ::-webkit-scrollbar-thumb{background-color:#263E62; border-radius: 0px;} ::-webkit-scrollbar-thumb:hover{background-color:#19284A; border-radius: 0px;} ::-webkit-scrollbar-thumb:active{background-color:#19284A; border-radius: 0px;}
-header
+:root
 {
-    background-color: white;
-    padding: 1rem;
-    text-align: center;
-    border-bottom: .2px solid #ebebeb;
+
 }
-nav
+html, body
 {
-    background-color: white;
+    background-image: url("./img19.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    overflow: hidden;
+}
+body
+{
+    animation: ShowPage 1s;
+    animation-delay: -0.1s;
+}
+@keyframes ShowPage
+{
+	from { opacity: 0%; } 
+	to { opacity: 100%; }
+}
+header nav
+{
+    background-color: rgba(13, 13, 13, .5);
     display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.6rem;
+    padding: .2rem;
+    backdrop-filter: blur(1rem);
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: .2rem;
 }
-nav div span a
+header nav a
 {
-    display: inline-block;
-    background-color: white;
-    padding: .8rem 1.3rem;
+    padding: .2rem;
+    padding-bottom: .13rem;
     border-radius: .3rem;
 }
-nav div span a:hover
+header nav a img
+{
+    margin-bottom: -.25rem;
+    margin-left: .05rem;
+    width: 30px;
+    filter: brightness(1.25);
+    image-rendering: pixelated;
+    transform: scale(0.8);
+}
+header nav a .search
+{
+    margin: .25rem;
+    margin-bottom: .0rem;
+    image-rendering: auto;
+    width: 20px;
+    transform: rotate3d(0, 0, 0, 180deg);
+}
+header nav a .egde
+{
+    image-rendering: auto;
+    width: 65px;
+    margin: -.15rem -1rem;
+    margin-bottom: -.5rem;
+}
+header nav .ashop
+{
+    padding-top: 0rem;
+    border-radius: .3rem;
+}
+header nav .ashop .shop
+{
+    image-rendering: auto;
+    width: 70px;
+    margin: -1.2rem -1.12rem;
+    margin-right: -1.3rem;
+    margin-bottom: -1.5rem;
+}
+header nav a:hover, header nav .ashop:hover
 {
     -webkit-transition: .2s;
-    -moz-transition: .2s;
     -ms-transition: .2s;
+    -moz-transition: .2s;
     transition: .2s;
-    background-color: #388a69;
+    background-color: rgba(190, 190, 190, .13);
+}
+header nav a:active img
+{
+    -webkit-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+    transition: .2s;
+    transform: scale(0.65);
+}
+main
+{
+    padding: 1rem;
+}
+main .content span
+{
+    display: block;
+    margin-bottom: 1.5rem;
+}
+main .content a
+{
+    display: inline-block;
+    padding: .2rem .8rem;
+    padding-right: .7rem;
     color: white;
+    text-align: center;
+    font-size: .65rem;
+    border-radius: .13rem;
+    max-width: 5rem;
 }
-main div
+main .content img
 {
-    background-color: white;
-    padding: 3rem;
-    margin: 2rem;
-    border-radius: .3rem;
-    box-shadow: 0rem 0rem .2rem 0rem rgba(0,0,0,0.1);
+    margin-bottom: -.2rem;
 }
-main div span
+main .content a br
 {
-    margin: .2rem;
+    margin: .1rem;
+}
+main .content a:hover
+{
+    background-color: rgba(255, 255, 255, .2);
 }
