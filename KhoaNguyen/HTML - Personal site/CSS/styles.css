@@ -1,0 +1,29 @@
+/******************************************TAG SELECTORS***************************************/
+body {
+  background-color: cornsilk;
+}
+
+hr {
+  background-color: white;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 5px;
+}
+
+h1 {
+  color: #C36839;
+}
+
+h2 {
+  color: #C36839;
+}
+
+h3 {
+  color: #C36839;
+}
+
+/******************************************ID SELECTORS***************************************/
+#heading {
+  color : #38A3A5; /*it will overide h1 above*/
+}
