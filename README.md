@@ -5,7 +5,7 @@ Practices: https://m2kv.github.io/sites/
 
 Khoa: https://m2kv.github.io/sites/KhoaNguyen/
 
-Khang: https://github.com/M2KV/sites/blob/ca229dbe652d9b025b9b6d046cc468050b9b75ba/KhangDinh/index.html
+Khang: https://m2kv.github.io/sites/KhangDinh/
 
 Vinh: https://m2kv.github.io/sites/VinhJK/
 
