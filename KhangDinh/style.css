@@ -16,7 +16,7 @@ body {
 
 .header {
   /* position: fixed; */
-  margin-left: 250px;
+  margin-left: 300px;
   margin-right: 200px;
   margin-top: -0px;
   width: 1000px;
@@ -46,7 +46,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
-#nav li a {
+#nav > li > a {
   text-decoration: none;
   display: block;
   line-height: 55px;
@@ -55,43 +55,63 @@ body {
 }
 
 #nav > li:hover > a {
-  /* #nav .subnav li:hover a { */
   color: #fff;
   background-color: pink;
   border-radius: 5px;
 }
 
-/* #nav .subnav { */
-/* position: absolute; */
-/* background-color: orange; */
-/* list-style-type: none; */
-/* top: 100%; */
-/* width: 10px; */
-/* left: 0; */
-/* min-width: 100px; */
-/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-/* display: none; */
-/* } */
+#nav .subnav li:hover a {
+  color: pink;
+  background-color: #fff;
+}
 
-/* #nav li:hover .subnav {
+#nav .subnav {
+  position: absolute;
+  background-color: pink;
+  list-style-type: none;
+  top: 100%;
+  /* border-bottom: 10px;
+  border-color: #fff; */
+  width: 106px;
+  margin-top: -8px;
+  left: 20px;
+  display: none;
+  font-family: "Quicksand", sans-serif;
+  /* display: block; */
+  border-radius: 5px;
+}
+
+ul {
   display: block;
-} */
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
 
-/* #nav .subnav a { */
-/* color: black; */
-/* padding: 0 12px; */
-/* font-size: 30px; */
-/* text-align: center; */
-/* float: left; */
-/* line-height: 38px; */
-/* } */
+#nav li:hover .subnav {
+  transition: ease-in 1;
+  display: block;
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 5px 16px;
+  font-size: 20px;
+  text-align: center;
+  /* float: left; */
+  line-height: 38px;
+}
 
 #nav > li > a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all ease-in-out 0.3s;
   color: #fff;
 }
 
+/* under */
 .bao {
   margin-top: 50px;
   /* background-color: brown; */
@@ -195,4 +215,14 @@ a {
 
 .fa > a {
   color: black;
+}
+
+.footer {
+  /* background-color: black; */
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 20px;
+  margin-top: 105px;
 }
