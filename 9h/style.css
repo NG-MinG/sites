@@ -1,0 +1,141 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("image/coder.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav
+{
+    display: inline-block;
+    height: 90px;
+    width: 100%;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+nav .symbol
+{
+    float: left;
+}
+nav .symbol .image
+{
+    height: 6rem;
+    width: 6rem;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav .list
+{
+    font-size: 20px;
+    float: right;
+   
+}
+nav .list ul
+{
+    list-style: none;
+}
+nav .list ul li
+{
+    float: left;
+    padding: 25px;
+}
+nav .list ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+    text-transform: uppercase;
+}
+nav .list ul li a:hover
+{
+    color:rgb(85, 253, 141); 
+}
+
+header 
+{
+    display: inline-block;
+    height: 600px;
+    width: 550px;
+}
+header h1
+{
+    color: whitesmoke;
+    padding: 50px 50px 10px 90px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(19, 243, 243);
+}
+header h2
+{
+    color: whitesmoke;
+    padding: 0px 50px 20px 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .node
+{
+    height: 40px;
+    width: 120px;
+    background:rgb(236, 155, 48);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 90px;
+    position: relative;
+}
+header .node:hover
+{
+    background:rgb(85, 253, 141);
+    content: "";
+    position: absolute;
+    top: 58.2%;
+    left: 0px;
+    width: 120px;
+    height: 40px;
+    transition: 0,25s;
+}
+header .node:hover::before
+{
+    width: 40px;
+}
+header .join
+{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+}
+
+footer
+{
+    border-top: 2px solid black;
+}
+footer .contact
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    float: left;
+    font-style: italic;
+    font-weight: bold;
+}
+footer div
+{
+    display: flex;
+}
+footer div p 
+{
+    padding: 15px 0px 0px 10px;
+    color:whitesmoke;
+}
+footer .instagram
+{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
