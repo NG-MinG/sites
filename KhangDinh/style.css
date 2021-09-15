@@ -16,8 +16,8 @@ body {
 
 .header {
   /* position: fixed; */
-  margin-left: 300px;
-  margin-right: 200px;
+  margin-left: 350px;
+  margin-right: 150px;
   margin-top: -0px;
   width: 1000px;
   height: 80px !important;
@@ -51,30 +51,34 @@ body {
   display: block;
   line-height: 55px;
   padding: 0 20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 #nav > li:hover > a {
   color: #fff;
   background-color: pink;
-  border-radius: 5px;
+  border-radius: 3px;
+}
+
+.subnav li:hover {
+  width: 101px;
+  background-color: pink;
 }
 
 #nav .subnav li:hover a {
-  color: pink;
-  background-color: #fff;
+  color: #fff;
+  /* background-color: #fff; */
 }
 
 #nav .subnav {
   position: absolute;
-  background-color: pink;
+  /* background-color: pink; */
   list-style-type: none;
   top: 100%;
-  /* border-bottom: 10px;
-  border-color: #fff; */
-  width: 106px;
+  border: 3px solid pink;
+  width: 100px;
   margin-top: -8px;
-  left: 20px;
+  left: 0px;
   display: none;
   font-family: "Quicksand", sans-serif;
   /* display: block; */
@@ -96,18 +100,24 @@ ul {
   display: block;
 }
 
+.subnav li {
+  /* padding: 15px; */
+  margin-bottom: -1px;
+}
+
 #nav .subnav a {
-  color: black;
-  padding: 5px 16px;
+  color: rgb(247, 82, 6);
+  font-weight: bold;
+  padding: 0px 20px;
   font-size: 20px;
   text-align: center;
   /* float: left; */
-  line-height: 38px;
+  line-height: 40px;
 }
 
 #nav > li > a:hover {
-  transform: scale(1.05);
-  transition: all ease-in-out 0.3s;
+  /* transform: scale(1.05);
+  transition: all ease-in-out 0.3s; */
   color: #fff;
 }
 
@@ -119,7 +129,7 @@ ul {
 }
 
 .d1 {
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 150px;
   width: 700px;
   height: 500px;
@@ -130,7 +140,7 @@ ul {
 .welcome {
   color: cyan;
   font-size: 85px;
-  font-family: "Kaisei HarunoUmi", serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .welcome:hover {
@@ -149,7 +159,7 @@ ul {
   width: 300px;
   height: 340px;
   /* background-color: yellow; */
-  margin-right: 100px;
+  margin-right: 150px;
   margin-top: 70px;
   float: right;
   flex: content;
