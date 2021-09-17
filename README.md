@@ -7,4 +7,8 @@ Khoa: https://m2kv.github.io/sites/KhoaNguyen/
 
 Khang: https://m2kv.github.io/sites/KhangDinh/
 
-Vinh: updating...
+Vinh: https://m2kv.github.io/sites/VinhJK/
+
+Khương: https://m2kv.github.io/sites/Manhkhuong/
+
+Chính: https://m2kv.github.io/sites/9h/

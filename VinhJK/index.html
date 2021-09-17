@@ -1,192 +1,69 @@
 <!DOCTYPE html>
-<html>
-    <!--comment-->
+    <html lang="en">
     <head>
-        <style>
-            .box {
-                width: 100%;
-                height: 120px;
-                background: rgb(179, 167, 9);
-            }
-            .box::after {
-                content: attr(data-title);
-            }
-
-            a::after {
-                content: "(" attr(href) ")";
-            }
-
-            .box:hover {
-                background-color: brown;
-            }
-            h1:hover {
-                color: blueviolet;
-            }
-             h1:active {
-                 color:rgb(179, 167, 9)
-            }
-
-            .box::before {
-                content: "Code";
-                display: block;
-                width: 50px;
-                height: 50px;
-                background-color: bisque;
-            }
-            .box::after {
-                content: "Vinh handsome";
-                display: block;
-                width: 50px;
-                height: 50px;
-                background-color: rgba(200, 230, 30, 0.295);
-            }
-            h1::first-letter {
-                font-size: 50px;
-            }
-        </style>
-
-        
-        <title>informationStudent</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-        <!-- External
-        <link rel="stylesheet" href="main.css"> -->
-        <!-- Internal -->
-        <!-- <style>
-            h1 {
-                color: red;
-                font-size: 30px;
-            }
-        </style> -->
+        <meta charset="UTF-8">
+        <title>KhuKhoTourWeb</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-     
     <body>
-        <div class="box" data-title="This is box has red color!"></div>
-        <a href="https://fullstack.edu.vn">Learn code web (https://fullstack.edu.vn)</a>
-        <div>
-            <h1>Huỳnh Tấn Vinh <br/> Line 2</h1>
-            
-            <input type="text">
-            <input type="checkbox">
-            
-            <input name="gender" type="radio">
-            <input name="gender" type="radio">
-            <input name="gender" type="radio">
-            
-            <input type="range">
-            
-            <button>Register</button>
-            <!-- Inline -->
-            <p style="color: rebeccapurple; font-size: 40px;">Huỳnh Tấn Vinh đẹp trai nhất Việt Nam. Tốt bụng nhất thế giới.</p>
-            <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/163525474_935673167270784_7437576392184366190_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=f6y9DastA-EAX_v9yS0&_nc_ht=scontent.fsgn3-1.fna&oh=ac355c61269386f418a643b176ed2d99&oe=6155FBA7" alt="Ảnh của Vinh">
-            <a href="https://fullstack.edu.vn/">Tới học lập trình</a>
-            <ul>
-                <li>Tên: Huỳnh Tấn Vinh</li>
-                <li>Tuổi: 20</li>
-                <li>Sinh viên trường:Khoa học tự nhiên</li>
-                <li>Khóa K20</li>
-            </ul>
-            <table>
-                <thead>
-                    <th>Tên </th>
-                    <th>Địa chỉ ở hiện tại </th>
-                    <th>Quê quán </th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Huỳnh Tấn Vinh  </td>
-                        <td>135B Trần Hưng Đạo, quận 1  </td>
-                        <td>Bình Nam, Thăng Bình, Quảng Nam  </td>
-                    </tr>
-                    <tr>
-                        <td>Nguyễn Văn A</td>
-                        <td>135B Trần Hưng Đạo, quận 1</td>
-                        <td>Đăk La, Đăk Hà, Kon Tum</td>
-                    </tr>
-                </tbody>
-            </table>
-            <img width="250" src="https://img.youtube.com/vi/R6plN3FvzFY/sddefault.jpg" alt="Picture youtube">
+        <div class="main">
+            <div class="navbar">         
+                <img src="picture/kkt.jpg" alt="LOGO Khu Kho Tour" class="logo">                                                   
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://m2kv.github.io/sites/VinhJK/HMTL_CSS/index.html">Vinh's profile</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="project"><a href="#">My Project</a></li>
 
-        </div>
-        <div>
-            <a href="https://www.youtube.com/F8VNOfficial">F8 Youtube Channel</a>
-        </div>
-        <div>
-            <ul>
-                <li>1. HTML, CSS từ zero đến Hero</li>
-                <li>2. Thiết kế web responsive</li>
-                <li>3. Lập trình Javascript cơ bản</li>
-                <li>4. Lập trình Javascript nâng cao</li>
-                <li>5. Nhiều khóa học khác từ Front-end, tới Back-end, Mobile, Devops</li>
-            </ul>
-        </div>
-        <div>
-            <table>
-                <thead>
-                    <th>#</th>
-                    <th>Tên khóa học</th>
-                    <th>Giá</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>HTML, CSS từ zero đến Hero</td>
-                        <td>Miễn phí</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Thiết kế web responsive</td>
-                        <td>Miễn phí</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Lập trình Javascript cơ bản</td>
-                        <td>Miễn phí</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div>
-            Tên đăng nhâp <input type="text" class="form-control" placeholder="Enter name">
-            Mật khẩu <input type="password" class="form- control" placeholder="Enter password">
-        </div>
-        <div>
-            <input name="gender" type="radio" class="form-control"> Nam
-            <input name="gender" type="radio" class="form-control"> Nữ
-            <input name="gender" type="radio" class="form-control"> Khác
-        </div> 
-        <div>
-            <input name="answer" type="checkbox" class="form-control"> Đáp án 1
-            <input name="answer" type="checkbox" class="form-control"> Đáp án 2
-            <input name="answer" type="checkbox" class="form-control"> Đáp án 3
-            <input name="answer" type="checkbox" class="form-control"> Đáp án 4
-        </div>
-        <div>
-            <input type="submit" value="Đăng kí">
-        </div>
-        <div>
-            <h1>CSS in html</h1>
-            <ol>
-                Gồm 3 cách
-                <li>Internal</li> 
-                Ta đặt các cặp property:value vào bên trong thuộc tính style nằm ở thẻ mở của phần tử.
-
-                <li>External</li> <!--Đặt các bộ định dạng CSS vào bên trong <style type="text/css"></style>-->
-                <li>Inline</li> Đặt các bộ định dạng CSS vào bên trong một tập tin css
-            </ol>
-        </div>
-        <div>
-            <img src="chu ki.jpg" alt="Ảnh cắt từ F8">
-            <img src="note/aa.jpg" alt="anh aa">
-        </div>
-        <div id="main">
-            <div class="header"></div>
-            <div class="nav"></div>
-            <div class="container">
-                <h1 class="heading">Tôi đang đều đặn học lập trình mỗi ngày</h1>
+                        <li class="team"><a href="#">Team</a>
+                            <div class="teamdev">
+                                <span><a href="#">Chinh's journey</a></span>
+                                <span><a target="_blank" href="https://m2kv.github.io/sites/KhoaNguyen/CSS%20-%20My%20Site/">Khoa's journey</a></span>
+                                <span><a target="_blank" href="https://m2kv.github.io/sites/KhangDinh/HTML,CSS,JS%20-%20MySite/">Khang's journey</a></span>
+                                <span><a href="#">Khuong's journey</a></span>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="search">
+                    <input class="srch" type="search" name="search1" placeholder="  Search Tour">
+                    <a href="#"><button class="btn">Search</button></a>
+                </div>
             </div>
-            <div class="footer"></div>
-        </div>
-    </body>
 
+            <div class="content">
+                <div class="intro">
+                    <h1>  Journey website & <br><span>Developing</span> <br> Vietnamese people</h1>
+                    <p class="par">Travel blogs nowadays are starting to look all the same, <br>
+                        This is a website that records the group's learning process. 😊 <br>
+                        Friends let's learn and grow together.😊 <br>
+                        We believe in the future. 😊 <br>
+                        We must not be lazy. Do your best 💕
+                    </p>
+                    <button class="cn"><a href="https://m2kv.github.io/sites/">JOIN US</a></button>
+                </div>
+                
+                <div class="form">
+                    <h2>Login here</h2>
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="password" name="password" placeholder="Enter your password">
+                    <button class="btnn"><a href="#">Login</a></button>
+                    <p class="link">Don't have an account <br>  <a href="#">Sign up </a> here</a> </p> 
+                    <p class="liw">Login with</p>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/tanvinh.huynh.9999"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/vinh.ktqn/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="mailto:huynhtanvinhktqn123@gmail.com"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    </body>
 </html>
