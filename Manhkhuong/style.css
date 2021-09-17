@@ -1,23 +1,23 @@
 html
 {
-    background-image: url(https://st.quantrimang.com/photos/image/2018/03/23/lap-trinh-3.jpg) ;
+    background-image: url(https://images.unsplash.com/photo-1529797233791-cb08843aeac2?ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTR8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80) ;
     height: 100vh;
     background-repeat:no-repeat ;
     background-size: cover;
 }
 nav.navbar a
 {
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline-block;
-    color:rgb(243, 250, 242);
+    color:rgba(236, 221, 10, 0.993);
     float: right;
     margin: 10px;
     text-decoration: none;
 }
 nav.navbar a:hover
 {
-    color: rgb(251, 255, 7);
+    color: rgb(42, 9, 230);
 }
 nav.first 
 {
@@ -29,7 +29,7 @@ nav.first
 }
 #color
 {
-    color: rgb(11, 236, 198);
+    color: rgb(79, 11, 236);
     transition:0.3s;
 }
 #color:hover
