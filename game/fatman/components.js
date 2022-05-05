@@ -155,7 +155,7 @@ class Referee extends Rectangle
 
     Punish(Player)
     {
-        if (intersectRect(Player, this.#Card))
+        if (intersectRect(Player, this.#Card) && this.#Card.y < Player.y + Player.height)
         {
             if (this.#colorCard == 'yellow')
                 Player.UpYellow();
