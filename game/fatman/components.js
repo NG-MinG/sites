@@ -155,7 +155,7 @@ class Referee extends Rectangle
 
     Punish(Player)
     {
-        if (intersectRect(Player, this.#Card) && this.#Card.y < Player.y + Player.height)
+        if (intersectRect(Player, this.#Card))
         {
             if (this.#colorCard == 'yellow')
                 Player.UpYellow();
@@ -180,10 +180,11 @@ class Referee extends Rectangle
         }
         else 
         {
+            this.#Card.setXY(this._x, this._y);
             this.#shoot = (Math.floor(Math.random() * 250) == 10);
+            this.#percent = 0;
             if (this.#shoot == 1)
             {
-                this.#percent = 0;
                 this.#colorCard = this.#nextCard;
                 this.#nextCard = (Math.floor(Math.random() * 30) % 2 == 0) ? "red" : "yellow";
                 
