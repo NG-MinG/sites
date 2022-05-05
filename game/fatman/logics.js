@@ -352,7 +352,10 @@ class Game{
             element.Moving();
 
             if (element.y + element.r >= this.#Player.y) 
+            {
                 this.#over = true;
+                this.#Player.Kill();
+            }
         });
     }
 
