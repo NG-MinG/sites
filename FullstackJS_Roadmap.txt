@@ -1,9 +1,0 @@
-FRONT END
-1. Basic:
-	HTML(HTML5) / CSS(CSS3) / JS(ES6)
-2. Frameworks and Libraries (Basic):
-	(Bootstrap | Tailwind) / Jquery
-3. Advanced:
-	SASS/SCSS / (ReactJS / NextJS / Redux) | (Angular / Vue)
-4. Study more: 
-	XML, Json, GraphQL
